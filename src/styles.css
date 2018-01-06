@@ -6,7 +6,7 @@
                             "diamond master grandmaster top"
                             "about about about about"
                             "howto howto howto howto";
-    grid-gap:  2rem 10px;
+    grid-gap:  2rem 2rem;
 }
 
 .about{
@@ -26,7 +26,7 @@
 .card{
     background-color: lavender;
     font-family: Georgia, serif;
-    box-shadow: black;
+    box-shadow: 1rem 1rem black;
 }
 
 .bronze{
