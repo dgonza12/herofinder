@@ -1,5 +1,4 @@
 const express = require('express');
-const http = require('http');
 const app = express();
 const socketIO = require('socket.io');
 
@@ -10,9 +9,9 @@ app.listen(port);
 
 
 /*socket Io */
-const server = http.createServer(app);
 
-const io = socketIO(server);
+
+const io = socketIO(app);
 
 
 
