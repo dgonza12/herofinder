@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+    display: grid;
+    grid-template-areas:
+                            "bronze silver gold platinum"
+                            "diamond master grandmaster top"
+                            "about about about";
+    grid-gap: 5px;
+}
+
+.about{
+    grid-area: about;
+    background-color: slategray;
+    color: white;
+}
+
+/* ratings cards */
+.card{
+    box-shadow: black;
+}
+
+.bronze{
+    grid-area: bronze;
+}
+
+.silver{
+    grid-area: silver;
+}
+
+.gold{
+    grid-area: gold;
+}
+
+.platinum{
+    grid-area: platinum;
+}
+
+.diamond{
+    grid-area: diamond;
+}
+
+.master{
+    grid-area: master;
+}
+
+.grandmaster{
+    grid-area: grandmaster;
+}
+
+.top{
+    grid-area: top;
+}
