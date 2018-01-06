@@ -4,7 +4,8 @@
     grid-template-areas:
                             "bronze silver gold platinum"
                             "diamond master grandmaster top"
-                            "about about about about";
+                            "about about about about"
+                            "howto howto howto howto";
     grid-gap:  2rem 10px;
 }
 
@@ -14,8 +15,16 @@
     color: white;
 }
 
+.howto{
+    grid-area: howto;
+    background-color: black;
+    color: white;
+}
+
+
 /* ratings cards */
 .card{
+    background-color: lavender;
     font-family: Georgia, serif;
     box-shadow: black;
 }
