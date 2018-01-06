@@ -4,7 +4,7 @@
     grid-template-areas:
                             "bronze silver gold platinum"
                             "diamond master grandmaster top"
-                            "about about about";
+                            "about about about about";
     grid-gap: 5px;
 }
 
