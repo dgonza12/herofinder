@@ -59,8 +59,8 @@
     <div class="Chat">
       <h1>Chat:</h1>
       <ul id="messages"></ul>
-      <form action="">
-        <input id="m" autocomplete="off" /><button>Send</button>
+      <form id="chat">
+        <input id="m" autocomplete="off" /><button id="send">Send</button>
       </form>
     </div>
   </div>
@@ -72,11 +72,13 @@
 <script>
     $(function () {
         var socket = io();
-        $('form').submit(function(){
-            socket.emit('chat message', $('#m').val());
-            $('#m').val('');
-            return false;
+
+        $('#send').on('click',()=> {
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
         });
+
         socket.on('chat message', function(msg){
             $('#messages').append($('<li>').text(msg));
         });
