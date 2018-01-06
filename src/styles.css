@@ -5,7 +5,7 @@
                             "bronze silver gold platinum"
                             "diamond master grandmaster top"
                             "about about about about";
-    grid-gap: 5px;
+    grid-gap:  2rem 10px;
 }
 
 .about{
@@ -16,6 +16,7 @@
 
 /* ratings cards */
 .card{
+    font-family: Georgia, serif;
     box-shadow: black;
 }
 
