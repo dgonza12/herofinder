@@ -13,7 +13,8 @@ app.listen(port);
  */
 
 
-const io = socketIO(app);
+const io = http.createServer(app);
+
 
 
 
