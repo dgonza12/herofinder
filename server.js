@@ -5,12 +5,12 @@ const port = process.env.PORT || 8080;
 
 
 app.use(express.static(__dirname + '/dist'));
-app.listen(port);
+//app.listen(port);
 
 
-const server = require('http').Server(app);
+//const server = require('http').Server(app);
 
-const io = socketIO(server);
+const io = require('socket.io').listen(app.listen(port));//socketIO(server);
 
 io.on('connection', function(socket){
     socket.on('chat message', function(msg){
