@@ -71,6 +71,7 @@
     </div>
   </div>
 </div>
+<app-players></app-players>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
@@ -80,7 +81,7 @@
 
     $('#send').on('click',()=> {
       //socket.emit('chat message', $('#m').val());
-      $('#messages').append($('<li class="message">').text($('#m').val()));
+      $('#messages').append($('<li>').text($('#m').val()));
       $('#m').val('');
     });
 
