@@ -53,7 +53,12 @@
 
     <div class=" howto">
       <h1>How to use Hero Recall:</h1>
-      <p>coming soon</p>
+      <ol>
+        <li>Enter your username with numbers ie mercy#1020</li>
+        <li>Select your rank.</li>
+        <li>Select your preferred role.</li>
+        <li>Hit Submit.</li>
+      </ol>
     </div>
 
     <div class="Chat">
@@ -71,16 +76,17 @@
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 
 <script>
-    var socket = io.connect();
+    //var socket = io.connect();
 
     $('#send').on('click',()=> {
-      socket.emit('chat message', $('#m').val());
+      //socket.emit('chat message', $('#m').val());
+      $('#messages').append($('<li class="message">').text($('#m').val()));
       $('#m').val('');
     });
 
-    socket.on('chat message', function(msg){
-      $('#messages').append($('<li>').text(msg));
-    });
+    //socket.on('chat message', function(msg){
+      //$('#messages').append($('<li>').text(msg));
+    //});
 
 </script>
 
