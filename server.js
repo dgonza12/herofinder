@@ -3,18 +3,12 @@ const app = express();
 const socketIO = require('socket.io');
 const port = process.env.PORT || 8080;
 
-/*
+
 app.use(express.static(__dirname + '/dist'));
 app.listen(port);
-*/
 
-
-/*socket Io*/
 
 const server = require('http').Server(app);
-
-server.use(express.static(__dirname + '/dist'));
-server.listen(port);
 
 const io = socketIO(server);
 

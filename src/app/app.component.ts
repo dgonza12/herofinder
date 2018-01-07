@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import * as io from 'socket.io-client';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,5 @@ import * as io from 'socket.io-client';
 })
 export class AppComponent  {
     title = 'Hero Recall';
-    socket;
-
-    constructor() {
-        this.socket = io();
-    }
 }
 
