@@ -3,17 +3,20 @@ const app = express();
 const socketIO = require('socket.io');
 const port = process.env.PORT || 8080;
 
+/*
 app.use(express.static(__dirname + '/dist'));
 app.listen(port);
+*/
 
 
-/*socket Io
+/*socket Io*/
 
- */
+const server = require('http').Server(app);
 
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+server.use(express.static(__dirname + '/dist'));
+server.listen(port);
 
+const io = socketIO(server);
 
 io.on('connection', function(socket){
     socket.on('chat message', function(msg){

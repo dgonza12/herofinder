@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import * as io from 'socket.io-client';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Hero Recall';
+export class AppComponent  {
+    title = 'Hero Recall';
+    socket;
+
+    constructor() {
+        this.socket = io();
+    }
 }
+
