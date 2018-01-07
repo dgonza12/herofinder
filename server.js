@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const socketIO = require('socket.io');
-const http = require('http');
 const port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/dist'));
@@ -12,10 +11,8 @@ app.listen(port);
 
  */
 
-
-const io = http.createServer(app);
-
-
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
 
 io.on('connection', function(socket){
