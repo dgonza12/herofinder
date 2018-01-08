@@ -5,12 +5,4 @@
 
 export const environment = {
   production: false,
-  firebase: {
-      apiKey: "AIzaSyAxq1Ujw_iAgBgrKRaIAsJcueYWjcK-vrI",
-      authDomain: "herorecall-d9d6c.firebaseapp.com",
-      databaseURL: "https://herorecall-d9d6c.firebaseio.com",
-      projectId: "herorecall-d9d6c",
-      storageBucket: "herorecall-d9d6c.appspot.com",
-      messagingSenderId: "515562150038"
-  }
 };

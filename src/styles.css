@@ -16,7 +16,6 @@
 }
 
 .howto{
-    text-align: left;
     grid-area: howto;
     background-color: black;
     color: white;
@@ -24,14 +23,6 @@
 
 
 /* chat */
-#messages{
-    height: 100px;
-}
-
-.message{
-    overflow: scroll;
-}
-
 
 
 /* ratings cards */
