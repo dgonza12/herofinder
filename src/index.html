@@ -15,7 +15,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.js"></script>
 
 <script>
-    var socket = io.connect();
+    var socket = io.connect('https://herorecall.herokuapp.com');
 
     $('#send').on('click',()=> {
         console.log("Send clicked");
