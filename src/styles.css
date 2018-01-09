@@ -28,12 +28,22 @@
     grid-area: chat;
 }
 
+.Chat ul{
+    height: 100px;
+    overflow: auto;
+}
+
 /* ratings cards */
 .card{
     background-color: lavender;
     border-radius: 25px;
     font-family: Georgia, serif;
     box-shadow: 1rem 1rem black;
+}
+
+.card ul{
+    height: 100px;
+    overflow: auto;
 }
 
 .bronze{
