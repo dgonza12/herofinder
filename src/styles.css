@@ -5,7 +5,8 @@
                             "bronze silver gold platinum"
                             "diamond master grandmaster top"
                             "about about about about"
-                            "howto howto howto howto";
+                            "howto howto howto howto"
+                            "chat chat chat chat";
     grid-gap:  2rem 2rem;
 }
 
@@ -23,11 +24,14 @@
 
 
 /* chat */
-
+.Chat{
+    grid-area: chat;
+}
 
 /* ratings cards */
 .card{
     background-color: lavender;
+    border-radius: 25px;
     font-family: Georgia, serif;
     box-shadow: 1rem 1rem black;
 }
