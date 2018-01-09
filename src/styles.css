@@ -35,6 +35,7 @@
 
 /* ratings cards */
 .card{
+    width : 1fr;
     background-color: lavender;
     border-radius: 25px;
     font-family: Georgia, serif;
