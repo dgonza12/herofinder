@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 .container{
     display: grid;
+    grid-auto-columns: 25%;
     grid-template-areas:
                             "bronze silver gold platinum"
                             "diamond master grandmaster top"
                             "about about about about"
-                            "howto howto howto howto"
-                            "chat chat chat chat";
+                            "howto howto chat chat";
     grid-gap:  2rem 2rem;
 }
 
