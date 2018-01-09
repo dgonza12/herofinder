@@ -25,11 +25,9 @@
 
     $('#Submit').on('click', () = > {
         console.log("Submit clicked");
-        if($('#name').val() != '') {
             console.log($('#Rank').val());
             socket.emit('player', {name: $('#name').val(), rank: $('#Rank').val(), role: $('#Role').val()});
             $('#name').val('');
-        }
     });
 
     socket.on('chat message', function (msg) {
