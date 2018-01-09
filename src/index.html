@@ -25,7 +25,7 @@
 
     $('#Submit').on('click',()=> {
        console.log("Submit clicked");
-       console.log("$('#Rank').val()");
+       console.log($('#Rank').val());
        socket.emit('player',{name : $('#name').val(), rank : $('#Rank').val(), role : $('#Role').val()});
     });
 
