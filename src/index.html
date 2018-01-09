@@ -23,9 +23,19 @@
         $('#m').val('');
     });
 
+    $('#Submit').on('click',()=> {
+       console.log("Submit clicked");
+       socket.emit('player',{name : $('#name').val(), rank : $('#Rank').val(), role : $('#Role').val()});
+    });
+
     socket.on('chat message', function(msg){
         console.log("Message Received");
         $('#messages').append($('<li>').text(msg));
+    });
+
+    socket.on('player', function(ply){
+        console.log("Player Received");
+        console.log(ply.name);
     });
 
 </script>
