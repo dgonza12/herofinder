@@ -36,6 +36,13 @@
     socket.on('player', function(ply){
         console.log("Player Received");
         console.log(ply.name);
+        var Player = ply.name + " " +ply.role;
+        switch (ply.rank){
+            case "BR":
+                $('#BronzeList').append($('<li>').text(Player));
+                break;
+
+        }
     });
 
 </script>
