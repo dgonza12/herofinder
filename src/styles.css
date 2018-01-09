@@ -16,13 +16,11 @@
 }
 
 .about{
-    grid-area: about;
     background-color: slategray;
     color: white;
 }
 
 .howto{
-    grid-area: howto;
     background-color: black;
     color: white;
 }
@@ -30,7 +28,7 @@
 
 /* chat */
 .Chat{
-    grid-area: chat;
+
 }
 
 .Chat ul{
@@ -53,33 +51,33 @@
 }
 
 .bronze{
-    grid-area: bronze;
+
 }
 
 .silver{
-    grid-area: silver;
+
 }
 
 .gold{
-    grid-area: gold;
+
 }
 
 .platinum{
-    grid-area: platinum;
+
 }
 
 .diamond{
-    grid-area: diamond;
+
 }
 
 .master{
-    grid-area: master;
+
 }
 
 .grandmaster{
-    grid-area: grandmaster;
+
 }
 
 .top{
-    grid-area: top;
+
 }
