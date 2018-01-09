@@ -1,103 +1,104 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <h2>The world could always use more heroes</h2>
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <h2>The world could always use more heroes</h2>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="col card bronze">
-      <h1>Bronze</h1>
-      <p>1-1499</p>
-      <ul id="BronzeList"></ul>
+        <div class="col card bronze">
+            <h1>Bronze</h1>
+            <p>1-1499</p>
+            <ul id="BronzeList"></ul>
+        </div>
+
+        <div class="col card silver">
+            <h1>Silver</h1>
+            <p>1500-1999</p>
+            <ul id="SilverList"></ul>
+        </div>
+
+        <div class="col card gold">
+            <h1>Gold</h1>
+            <p>2000-2499</p>
+            <ul id="GoldList"></ul>
+        </div>
+
+        <div class="col card platinum">
+            <h1>Platinum</h1>
+            <p>2500-2999</p>
+            <ul id="PlatinumList"></ul>
+        </div>
+
+        <div class="col card diamond">
+            <h1>Diamond</h1>
+            <p>3000-3499</p>
+            <ul id="DiamondList"></ul>
+        </div>
+
+        <div class="col card master">
+            <h1>Master</h1>
+            <p>3500-3999</p>
+            <ul id="MasterList"></ul>
+        </div>
+
+        <div class="col card grandmaster">
+            <h1>Grandmaster</h1>
+            <p>4000+</p>
+            <ul id="GrandMasterList"></ul>
+        </div>
+
+        <div class="col card top">
+            <h1>Top 500</h1>
+        </div>
+
+        <div class="col about">
+            <h1>About Hero Recall:</h1>
+            <p>personal project to help Overwatch players find players to play with in competitive</p>
+        </div>
+
+        <div class="col howto">
+            <h1>How to use Hero Recall:</h1>
+            <p>Coming soon</p>
+        </div>
+
+        <div class="">
+            <h1>Enter Info:</h1>
+            <p>Make sure to include the numbers and # after your username, ie Mercy#1020</p>
+            <form>
+                Username: <input type="text" id="name">
+                Rank: <select id="Rank">
+                <option value="BR">Bronze</option>
+                <option value="SI">Silver</option>
+                <option value="GO">Gold</option>
+                <option value="PL">Platinum</option>
+                <option value="DI">Diamond</option>
+                <option value="MA">Master</option>
+                <option value="GR">GrandMaster</option>
+            </select>
+                Role: <select id="Role">
+                <option value="DPS">DPS</option>
+                <option value="TANK">Tank</option>
+                <option value="SUPPORT">Support</option>
+                <option value="FLEX">Flex</option>
+            </select>
+                <input type="button" value="Submit" id="Submit">
+            </form>
+        </div>
+
+        <div class="col Chat">
+            <h1>Chat:</h1>
+            <ul id="messages"></ul>
+            <form>
+                <input type="text" id="m">
+                <input type="button" value="Send" id="send">
+            </form>
+        </div>
+
+
     </div>
 
-    <div class="col card silver">
-      <h1>Silver</h1>
-      <p>1500-1999</p>
-      <ul id="SilverList"></ul>
-    </div>
-
-    <div class="col card gold">
-      <h1>Gold</h1>
-      <p>2000-2499</p>
-      <ul id="GoldList"></ul>
-    </div>
-
-    <div class="col card platinum">
-      <h1>Platinum</h1>
-      <p>2500-2999</p>
-      <ul id="PlatinumList"></ul>
-    </div>
-
-    <div class="col card diamond">
-      <h1>Diamond</h1>
-      <p>3000-3499</p>
-      <ul id="DiamondList"></ul>
-    </div>
-
-    <div class="col card master">
-      <h1>Master</h1>
-      <p>3500-3999</p>
-      <ul id="MasterList"></ul>
-    </div>
-
-    <div class="col card grandmaster">
-      <h1>Grandmaster</h1>
-      <p>4000+</p>
-      <ul id="GrandMasterList"></ul>
-    </div>
-
-    <div class="col card top">
-      <h1>Top 500</h1>
-    </div>
-
-    <div class="col about">
-      <h1>About Hero Recall:</h1>
-      <p>personal project to help Overwatch players find players to play with in competitive</p>
-    </div>
-
-    <div class="col howto">
-      <h1>How to use Hero Recall:</h1>
-      <p>Coming soon</p>
-    </div>
-
-    <div class="col Chat">
-      <h1>Chat:</h1>
-      <ul id="messages"></ul>
-        <form>
-            <input type="text" id="m">
-            <input type="button" value="Send" id ="send">
-        </form>
-    </div>
-
-
-
-  </div>
-  <div class="">
-    <h1>Enter Info:</h1>
-    <p>Make sure to include the numbers and # after your username, ie Mercy#1020</p>
-    <form>
-      Username: <input type="text" id="name">
-      Rank: <select id="Rank">
-      <option value="BR">Bronze</option>
-      <option value="SI">Silver</option>
-      <option value="GO">Gold</option>
-      <option value="PL">Platinum</option>
-      <option value="DI">Diamond</option>
-      <option value="MA">Master</option>
-      <option value="GR">GrandMaster</option>
-    </select>
-      Role: <select id="Role">
-      <option value="DPS">DPS</option>
-      <option value="TANK">Tank</option>
-      <option value="SUPPORT">Support</option>
-      <option value="FLEX">Flex</option>
-    </select>
-      <input type="button" value="Submit" id ="Submit">
-    </form>
-  </div>
 </div>
 
 
