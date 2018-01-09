@@ -17,17 +17,17 @@
 <script>
     var socket = io.connect(window.location.origin);
 
-    $('#send').on('click', () = > {
+    $('#send').on('click', () => {
         console.log("Send clicked");
         socket.emit('chat message', $('#m').val());
         $('#m').val('');
     });
 
-    $('#Submit').on('click', () = > {
+    $('#Submit').on('click', () => {
         console.log("Submit clicked");
-            console.log($('#Rank').val());
-            socket.emit('player', {name: $('#name').val(), rank: $('#Rank').val(), role: $('#Role').val()});
-            $('#name').val('');
+        console.log($('#Rank').val());
+        socket.emit('player', {name: $('#name').val(), rank: $('#Rank').val(), role: $('#Role').val()});
+        $('#name').val('');
     });
 
     socket.on('chat message', function (msg) {
