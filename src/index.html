@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hero Recall</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>Hero Recall</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<app-root></app-root>
 </body>
 
 <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
@@ -17,28 +17,31 @@
 <script>
     var socket = io.connect(window.location.origin);
 
-    $('#send').on('click',()=> {
+    $('#send').on('click', () = > {
         console.log("Send clicked");
         socket.emit('chat message', $('#m').val());
         $('#m').val('');
     });
 
-    $('#Submit').on('click',()=> {
-       console.log("Submit clicked");
-       console.log($('#Rank').val());
-       socket.emit('player',{name : $('#name').val(), rank : $('#Rank').val(), role : $('#Role').val()});
+    $('#Submit').on('click', () = > {
+        console.log("Submit clicked");
+        if($('#name').val() != '') {
+            console.log($('#Rank').val());
+            socket.emit('player', {name: $('#name').val(), rank: $('#Rank').val(), role: $('#Role').val()});
+            $('#name').val('');
+        }
     });
 
-    socket.on('chat message', function(msg){
+    socket.on('chat message', function (msg) {
         console.log("Message Received");
         $('#messages').append($('<li>').text(msg));
     });
 
-    socket.on('player', function(ply){
+    socket.on('player', function (ply) {
         console.log("Player Received");
         console.log(ply.name);
-        var Player = ply.name + " " +ply.role;
-        switch (ply.rank){
+        var Player = ply.name + " " + ply.role;
+        switch (ply.rank) {
             case "BR":
                 $('#BronzeList').append($('<li>').text(Player));
                 break;
