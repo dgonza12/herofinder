@@ -22,7 +22,7 @@
 }
 
 .about{
-    background-color: slategray;
+    background-color: #43484c;
     color: white;
 }
 
@@ -38,13 +38,18 @@
 }
 
 .Chat ul{
-    height: 100px;
+    height: 200px;
     overflow: auto;
+}
+
+.Chat li{
+    border-left: 6px solid #218ffe;
 }
 
 /* ratings cards */
 .card{
     background-color: white;
+    border-left: 6px solid #f99e1a;
     column-width: 1fr;
     border-radius: 25px;
     font-family: Georgia, serif;
