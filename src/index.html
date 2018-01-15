@@ -19,6 +19,15 @@
 <script>
     var socket = io.connect(window.location.origin);
 
+    function checkName(name) {
+        if(name.indexOf('#') > -1){
+            return true;
+        } else {
+            alert("Please enter a valid username with ID!");
+            return false;
+        }
+    }
+
     $('#send').on('click', () => {
         console.log("Send clicked");
         socket.emit('chat message', $('#m').val());
@@ -27,9 +36,12 @@
 
     $('#Submit').on('click', () => {
         console.log("Submit clicked");
-        console.log($('#Rank').val());
-        socket.emit('player', {name: $('#name').val(), rank: $('#Rank').val(), role: $('#Role').val()});
-        $('#name').val('');
+
+        if(checkName($('#name').val())){
+            socket.emit('player', {name: $('#name').val(), rank: $('#Rank').val(), role: $('#Role').val()});
+            $('#name').val('');
+        }
+             
     });
 
     socket.on('chat message', function (msg) {
